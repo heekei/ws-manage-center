@@ -82,10 +82,10 @@
 <script>
 export default {
   data: () => ({
-    siteName: 'zii_log',
-    domain: 'h-os.online',
-    keyword: 'zii',
-    times: 1,
+    siteName: '',
+    domain: '',
+    keyword: '',
+    times: 5,
     sites: [],
     sitesHash: {},
     selected: [],
