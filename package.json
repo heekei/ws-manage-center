@@ -5,6 +5,9 @@
   "repository": "git@github.com:heekei/ws-manage-center.git",
   "author": "Heekei <zxq0610@qq.com>",
   "license": "MIT",
+  "scripts": {
+    "client":"node src/client"
+  },
   "dependencies": {
     "axios": "^0.18.0",
     "express": "^4.16.4",

@@ -4,6 +4,7 @@ const http = require('http');
 
 // const nodes = [];
 global.nodesSet = new Set();
+// global.nodesSet;
 /**
  * @description
  * @param {WebSocket} ws
@@ -11,7 +12,7 @@ global.nodesSet = new Set();
  */
 function nodeServerHandler(ws, req) {
   global.nodesSet.add(ws);
-  console.log(req.headers.heekei);
+  console.log(req.headers['node-ip'].toString(), req.headers['node-port'].toString());
 
   const pingTimer = setInterval(() => {
     if (ws.isAlive === false) { return ws.terminate(); }
@@ -30,8 +31,8 @@ function nodeServerHandler(ws, req) {
     console.log('nodesServer: ', msg);
   });
 }
-setInterval(() => {
-  console.log(global.nodesSet);
-}, 1000);
+// setInterval(() => {
+//   console.log(global.nodesSet);
+// }, 1000);
 
 module.exports = nodeServerHandler;

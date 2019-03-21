@@ -10,13 +10,13 @@
  - 日志查看
 
 ## 2. nodesServer:接收服务器节点传递的消息
-- 收：
+- receive from client：
   - 服务器详情
-- 发：
+- send to client：
   - 控制节点
 
 ## 3. client:服务器节点
-- 收：
+- receive from nodesServer：
   - 控制节点
-- 发：
+- send to nodesServer：
   - 服务器详情
