@@ -6,18 +6,25 @@
   "author": "Heekei <zxq0610@qq.com>",
   "license": "MIT",
   "scripts": {
-    "client":"node src/client"
+    "serve:client": "webpack --env.target=client --watch",
+    "serve:server": "node src/server",
+    "build": "yarn build:server && yarn build:client",
+    "build:server": "webpack --env.target=server --env.production",
+    "build:client": "webpack --env.target=client --env.production"
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "express": "^4.16.4",
+    "express": "^4.17.1",
     "express-ws": "^4.0.0",
-    "mongodb": "^3.1.13",
-    "ws": "^6.1.4"
+    "mongodb": "^3.2.6",
+    "pkg": "^4.4.0",
+    "ws": "^7.0.0"
   },
   "devDependencies": {
-    "eslint": "^5.12.0",
+    "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0"
+    "eslint-plugin-import": "^2.17.3",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2"
   }
 }

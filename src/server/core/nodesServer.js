@@ -6,7 +6,7 @@ const http = require('http');
 global.nodesSet = new Set();
 // global.nodesSet;
 /**
- * @description
+ * @description 服务器节点
  * @param {WebSocket} ws
  * @param {http.IncomingMessage} req
  */
@@ -22,7 +22,7 @@ function nodeServerHandler(ws, req) {
     }
     global.nodesSet.delete(ws);
     return clearInterval(pingTimer);
-  }, 1000);
+  }, 5000);
   ws.on('pong', () => {
     ws.isAlive = true;
   });
