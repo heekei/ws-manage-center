@@ -13,7 +13,7 @@
     "build:client": "webpack --env.target=client --env.production"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "express": "^4.17.1",
     "express-ws": "^4.0.0",
     "mongodb": "^3.2.6",
