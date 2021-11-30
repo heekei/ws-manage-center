@@ -10,14 +10,7 @@
     "build:server": "webpack --env.target=server --env.production",
     "build:client": "webpack --env.target=client --env.production"
   },
-  "dependencies": {
-    "axios": "^0.18.0",
-    "express": "^4.17.1",
-    "express-ws": "^4.0.0",
-    "mongodb": "^3.2.6",
-    "pkg": "^4.4.0",
-    "ws": "^7.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
