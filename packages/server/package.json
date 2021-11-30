@@ -1,0 +1,12 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve:client": "webpack --env.target=client --watch",
+    "serve:server": "node ./src/server"
+  },
+  "author": "",
+  "license": "ISC"
+}
